@@ -21,5 +21,5 @@ func main() {
 		b[i] = p[int(b[i])%len(p)]
 	}
 
-	fmt.Println(string(b))
+	fmt.Print(string(b))
 }
