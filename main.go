@@ -6,14 +6,20 @@ import (
 	"fmt"
 )
 
+const defaultLength = 4
+
 var (
-	n = flag.Int("n", 4, "id length")
+	n = flag.Int("n", defaultLength, "id length")
 )
 
 var p = "0123456789abcdefghijklmnopqrstuvwxyz"
 
 func main() {
 	flag.Parse()
+
+	if *n <= 0 {
+		*n = defaultLength
+	}
 
 	b := make([]byte, *n)
 	rand.Read(b)
