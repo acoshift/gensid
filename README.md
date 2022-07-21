@@ -4,7 +4,7 @@ Generate random Short ID
 
 ## Install
 
-`go get -u github.com/acoshift/gensid`
+`go install github.com/acoshift/gensid@master`
 
 ## Usage
 
